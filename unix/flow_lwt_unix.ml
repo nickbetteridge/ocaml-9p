@@ -17,6 +17,8 @@
 
 open Lwt.Infix
 
+[@@@warning "-34"]
+
 type 'a io = 'a Lwt.t
 type buffer = Cstruct.t
 type error = [`Unix of Unix.error]
